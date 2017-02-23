@@ -1,0 +1,20 @@
+<% include ./head.html %>
+
+<div id="flash" class="flash">
+This is splash;
+</div>
+<div class="p-index">
+This is index
+</div>
+<% include ./foot.html %>
+<script>
+    function hideSplash() {
+        var splash = document.querySelector('#flash');
+
+        setTimeout(function () {
+            splash.style.display = 'none';
+        }, 3500)
+    }
+
+    hideSplash();
+</script>
